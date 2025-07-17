@@ -5,6 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Misión Nutrición</title>
     <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+header {
+  background-color: #4CAF50;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
+
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+}
+
+.titulo {
+  font-size: 7vh;
+}
+
+.opcion {
+  font-size: 3vh;
+}
+
+iframe {
+  width: 100%;
+  height: calc(100vh - 130px); /* Ajusta según el alto de tu header/nav */
+  border: none;
+  display: block;
+}
+
 .fab-container {
   position: fixed;
   bottom: 20px;
@@ -13,7 +73,7 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-end;
-  width: 5vh;
+  width: auto;
 }
 
 .fab-main {
@@ -61,8 +121,6 @@
   white-space: nowrap;
   box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   transition: background-color 0.3s;
-  height: 6vh;
-  width: 100%;
   font-size: 2vh;
 }
 
@@ -70,58 +128,42 @@
   background-color: #575757;
 }
 
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-        }
+  nav ul li a {
+    text-align: center;
+    padding: 12px;
+  }
 
-        header {
-            background-color: #4CAF50;
-            padding: 20px 0;
-            text-align: center;
-            color: white;
-        }
+  .titulo {
+    font-size: 4.5vh;
+  }
 
-        nav {
-            background-color: #333;
-        }
+  .opcion {
+    font-size: 2.3vh;
+  }
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
+  .fab-main {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
 
-        nav ul li {
-            margin: 0;
-        }
+  .fab-menu button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
 
-        nav ul li a {
-            display: block;
-            padding: 14px 20px;
-            color: white;
-            text-decoration: none;
-        }
-
-        nav ul li a:hover {
-            background-color: #575757;
-        }
-        .titulo{
-            font-size: 7vh;
-        }
-        .opcion{
-            font-size: 3vh;
-        }
-        iframe {
-  width: 100%;
-  height: calc(100vh - 130px); /* Ajusta según el alto de tu header/nav */
-  border: none;
-  display: block;
+  iframe {
+    height: calc(100vh - 180px);
+  }
 }
+
 
     </style>
 </head>

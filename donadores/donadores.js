@@ -31,6 +31,7 @@ function mostrarDonadores(lista) {
 
     const celdaUbicaciones = document.createElement('td');
 const botonUbicaciones = document.createElement('button');
+botonUbicaciones.classList.add('ver');
 botonUbicaciones.textContent = 'Ver ubicaciones';
 botonUbicaciones.addEventListener('click', () => {
   verDetalle(item.nit); // <--- CORREGIDO AQUÍ

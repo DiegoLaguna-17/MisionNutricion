@@ -33,7 +33,7 @@ function mostrarDonaciones(lista) {
       <td>${d.donante_ubicacion?.donantes?.razon_social || ''}</td>
       <td>${d.donante_ubicacion?.punto_venta || ''}</td>
       <td>${d.fecha || ''}</td>
-      <td><button onclick="verDetalle(${d.id_donacion})">Ver</button></td>
+      <td><button onclick="verDetalle(${d.id_donacion})" class="ver">Ver</button></td>
     `;
 
     tabla.appendChild(fila);

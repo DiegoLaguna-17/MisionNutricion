@@ -34,7 +34,7 @@ function mostrarEnvios(lista) {
       <td>${d.fundacion.nombre }</td>
       <td>${d.fecha}</td>
       <td>${d.voluntario}</td>
-      <td><button onclick="verDetalle(${d.id_envio})">Ver</button></td>
+      <td><button onclick="verDetalle(${d.id_envio})" class="ver">Ver</button></td>
     `;
 
     tabla.appendChild(fila);

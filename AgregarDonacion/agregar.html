@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Donaciones</title>
+  <style>
+    input, select, button {
+      margin: 5px;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+<div style="display: flex;flex-direction: row;">
+  <h2>Registro de Donaciones</h2>
+  <button id="copiarReporte">Copiar reporte al portapapeles</button>
+  </div>
+  <!-- Filtro y select de donante -->
+  <label>Buscar Donante:</label>
+  <input type="text" id="filtroDonante" placeholder="Buscar donante...">
+  <select id="cbDonantes">
+   
+  </select>
+  
+
+  <!-- Filtro y select de sucursal -->
+  <label>Buscar Sucursal:</label>
+  <input type="text" id="filtroSucursal" placeholder="Buscar sucursal...">
+  <select id="cbSucursal">
+    
+  </select>
+  
+
+  <!-- Filtro y select de ítem -->
+  <label>Buscar Ítem:</label>
+  <input type="text" id="filtroItem" placeholder="Buscar ítem...">
+  <select id="selectItem">
+    
+  </select>
+  
+<br><br>
+  <!-- Cantidad y Fecha -->
+   <div style="display: flex;flex-direction: row;">
+    <div>
+        <h2>Cantidad:</h2>
+        
+        <input type="number" id="cantidad" placeholder="Cantidad">
+    </div>
+    <div>
+    <h2>Fecha de vencimiento</h2>
+    
+    <input type="date" id="fecha">
+    </div>
+  </div>
+
+
+  <!-- Tabla de ítems -->
+  <h3>Ítems registrados:</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Ítem</th>
+        <th>Cantidad</th>
+        <th>Fecha</th>
+      </tr>
+    </thead>
+    <tbody id="tabla-body"></tbody>
+  </table>
+
+  <!-- Botón para copiar el reporte -->
+  <br>
+
+
+  <script  type="module" src="./agregar.js">
+    // Filtro dinámico
+    
+  </script>
+
+</body>
+</html>

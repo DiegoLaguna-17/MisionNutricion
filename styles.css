@@ -1,0 +1,46 @@
+.fab-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1100;
+}
+
+.fab-main {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.fab-main:hover {
+  transform: rotate(90deg);
+}
+
+.fab-menu {
+  display: none;
+  flex-direction: column;
+  margin-bottom: 10px;
+  align-items: flex-end;
+}
+
+.fab-menu button {
+  background-color: #333;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  padding: 10px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+.fab-menu button:hover {
+  background-color: #575757;
+}

@@ -1,0 +1,87 @@
+<!-- items.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Alimentos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+
+    table {
+      width: 80%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      background-color: #fff;
+    }
+
+    thead {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    @media (max-width: 600px) {
+      table {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Lista de Alimentos</h1>
+  <input type="text" id="filtroDonador" placeholder="Filtrar por razón social" style="display:block; margin: 1rem auto; padding: 0.5rem; width: 60%;">
+
+  <table>
+    <thead>
+      <tr>
+        <th>NIT</th>
+        <th>Razon Social</th>
+        <th>Ubicaciones</th>
+      </tr>
+    </thead>
+    <tbody id="tabla-donadores">
+      <!-- Aquí se llenarán los datos -->
+    </tbody>
+  </table>
+
+  <div id="popup" style="display:none; position:fixed; top:10%; left:50%; transform:translateX(-50%); background:white; padding:20px; border:1px solid #ccc; box-shadow:0 2px 10px rgba(0,0,0,0.3); z-index:1000;">
+  <h3>Productos de la donación</h3>
+  <table id="tabla-ubicaciones">
+    <thead>
+      <tr>
+        <th>Punto de venta</th>
+      </tr>
+    </thead>
+    <tbody id="tabla-detalles">
+
+    </tbody>
+   
+  </table>
+  <button onclick="cerrarPopup()">Cerrar</button>
+</div>
+
+  <script type="module" src="donadores.js"></script>
+</body>
+</html>

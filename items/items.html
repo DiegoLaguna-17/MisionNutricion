@@ -1,0 +1,71 @@
+<!-- items.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Alimentos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+
+    table {
+      width: 80%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      background-color: #fff;
+    }
+
+    thead {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    @media (max-width: 600px) {
+      table {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Lista de Alimentos</h1>
+  <input type="text" id="filtroDescripcion" placeholder="Filtrar por descripción" style="display:block; margin: 1rem auto; padding: 0.5rem; width: 60%;">
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Descripción</th>
+        <th>Total en Stock</th>
+      </tr>
+    </thead>
+    <tbody id="tabla-items">
+      <!-- Aquí se llenarán los datos -->
+    </tbody>
+  </table>
+
+  <script type="module" src="items.js"></script>
+</body>
+</html>

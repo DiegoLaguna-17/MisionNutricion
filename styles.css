@@ -21,6 +21,8 @@ body {
   margin: 0;
   background-color: var(--gris-fondo);
   color: #333;
+    overflow-y: scroll; /* Solo el body tendrá scroll */
+
 }
 
 /* ===== HEADER ===== */
@@ -247,4 +249,15 @@ a {
   iframe {
     height: calc(100vh - 180px);
   }
+}
+#iframeContainer {
+  width: 100%;
+  height: auto; /* Se ajustará al contenido */
+  overflow: visible;
+}
+
+iframe {
+  width: 100%;
+  border: none;
+  display: block;
 }

@@ -189,3 +189,19 @@ iframe.addEventListener('load', () => {
     console.warn("No se puede acceder al contenido del iframe por política de seguridad.");
   }
 });
+
+
+
+  window.addEventListener("message", function(event) {
+    if (event.data.tipo === "ajustarAltura") {
+      const iframe = document.getElementById("iframeContenido");
+      iframe.style.height = event.data.altura + "px";
+    }
+  });
+  function enviarAltura() {
+    const altura = document.body.scrollHeight;
+    parent.postMessage({ tipo: "ajustarAltura", altura: altura }, "*");
+  }
+
+  window.addEventListener("load", enviarAltura);
+  window.addEventListener("resize", enviarAltura);

@@ -1,0 +1,150 @@
+:root {
+  --rojo-oscuro: #E82C59;
+  --rojo-medio: #EF3B4B;
+  --rojo-naranja: #F15C3B;
+  --verde-hoja: #5EC457;
+  --rosa-fondo: #FFF3F5;
+  --gris-claro: #f9f9f9;
+  --gris-hover: #f1f1f1;
+  --texto-principal: #333;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--gris-claro);
+  margin: 0;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: var(--rojo-oscuro);
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: var(--rojo-medio);
+  outline: none;
+}
+
+/* ===== TABLA ===== */
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.ubis{
+      width: 70vh;
+}
+thead {
+  background: linear-gradient(to right, var(--rojo-oscuro), var(--rojo-medio), var(--rojo-naranja));
+  color: white;
+  font-weight: bold;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+  background-color: var(--rosa-fondo);
+}
+
+/* ===== VISTA COMPLETA DE DOCUMENTO ===== */
+.ver {
+  width: 100%;
+  height: 110%;
+}
+
+/* ===== POPUP MODAL ===== */
+#popup {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 20px;
+  border: 2px solid var(--rojo-medio);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  table {
+    width: 100%;
+  }
+
+  input[type="text"] {
+    width: 90%;
+  }
+}
+/* ===== BOTONES EN CELDAS DE TABLA ===== */
+td button {
+  background-color: #E82C59; /* rojo principal */
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  margin: 2px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+td button:hover {
+  background-color: #EF3B4B; /* rojo medio */
+  transform: scale(1.05);
+}
+.cerrar {
+  background-color: #E82C59; /* rojo principal del logo */
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cerrar:hover {
+  background-color: #EF3B4B; /* tono más claro al hacer hover */
+  transform: scale(1.05);
+}
+
+.popup {
+  width: 70vw; /* Más ancho, mejor en pantallas grandes */
+  max-width: 600px; /* Pero no más de 600px */
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 24px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  z-index: 1000;
+}
+

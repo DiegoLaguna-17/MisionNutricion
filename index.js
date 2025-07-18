@@ -132,6 +132,16 @@ window.toggleFabMenu = function () {
   menu.classList.toggle('show');
   button.classList.toggle('rotate');
 };
+
+document.addEventListener('click', function (event) {
+  const isFabMain = fabMain.contains(event.target);
+  const isFabMenu = fabMenu.contains(event.target);
+
+  if (!isFabMain && !isFabMenu) {
+    fabMain.classList.remove('rotate');
+    fabMenu.classList.remove('show');
+  }
+});
 let donantes = [];
 
 async function cargarDonantes() {
@@ -164,4 +174,18 @@ async function cargarDonantes() {
 
 document.addEventListener('DOMContentLoaded', () => {
   cargarDonantes();
+});
+
+
+const iframe = document.getElementById('iframeContenido'); // Usa el ID real de tu iframe
+
+iframe.addEventListener('load', () => {
+  try {
+    iframe.contentWindow.document.addEventListener('click', function () {
+      fabMain.classList.remove('rotate');
+      fabMenu.classList.remove('show');
+    });
+  } catch (e) {
+    console.warn("No se puede acceder al contenido del iframe por política de seguridad.");
+  }
 });

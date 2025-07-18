@@ -1,0 +1,110 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 2rem;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #7C992F; /* verde oliva */
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.6rem 1rem;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #B47AB3; /* lila */
+  color: white;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 600px) {
+  table {
+    width: 100%;
+  }
+
+  input[type="text"] {
+    width: 90%;
+  }
+}
+
+.ver {
+  width: 100%;
+  height: 110%;
+  border: none;
+}
+
+/* Popup */
+#popup {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  max-width: 90%;
+  width: 600px;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Botón de cierre estilizado */
+.cerrar {
+  background-color: #E82C59; /* rojo principal del logo */
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cerrar:hover {
+  background-color: #EF3B4B; /* tono más claro al hacer hover */
+  transform: scale(1.05);
+}

@@ -4,180 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Misión Nutrición</title>
-    <style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-}
-
-header {
-  background-color: #4CAF50;
-  padding: 20px 0;
-  text-align: center;
-  color: white;
-}
-
-nav {
-  background-color: #333;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-nav ul li {
-  margin: 0;
-}
-
-nav ul li a {
-  display: block;
-  padding: 14px 20px;
-  color: white;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  background-color: #575757;
-}
-
-.titulo {
-  font-size: 7vh;
-}
-
-.opcion {
-  font-size: 3vh;
-}
-
-iframe {
-  width: 100%;
-  height: calc(100vh - 130px); /* Ajusta según el alto de tu header/nav */
-  border: none;
-  display: block;
-}
-
-.fab-container {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1100;
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: flex-end;
-  width: auto;
-}
-
-.fab-main {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 28px;
-  border: none;
-  border-radius: 50%;
-  width: 10vh;
-  height: 10vh;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  transition: transform 0.4s ease;
-}
-
-.fab-main.rotate {
-  transform: rotate(135deg);
-}
-
-.fab-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(20px);
-  transition: all 0.4s ease;
-  margin-bottom: 10px;
-}
-
-.fab-menu.show {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-.fab-menu button {
-  background-color: #333;
-  color: white;
-  border: none;
-  margin: 8px 0;
-  padding: 10px 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  white-space: nowrap;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-  transition: background-color 0.3s;
-  font-size: 2vh;
-}
-
-.fab-menu button:hover {
-  background-color: #575757;
-}
-
-/* ====== RESPONSIVE ====== */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  nav ul li a {
-    text-align: center;
-    padding: 12px;
-  }
-
-  .titulo {
-    font-size: 4.5vh;
-  }
-
-  .opcion {
-    font-size: 2.3vh;
-  }
-
-  .fab-main {
-    width: 60px;
-    height: 60px;
-    font-size: 24px;
-  }
-
-  .fab-menu button {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-
-  iframe {
-    height: calc(100vh - 180px);
-  }
-}
-
-
-    </style>
+     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
     <header>
-        <h1 class="titulo">Misión Nutrición</h1>
+        <img src="assets/mnb-removebg-preview.png" alt="Mision Nutricion">
     </header>
 
     <nav>
         <ul>
             <li><a href="/items/items.html" target="contenido" class="opcion">Items</a></li>
             <li><a href="/donadores/donadores.html" target="contenido"class="opcion">Donadores</a></li>
-
+            <li><a href="/fundaciones/fundaciones.html" target="contenido" class="opcion">Fundaciones</a></li>
             <li><a href="/donaciones/donaciones.html"target="contenido"class="opcion">Donaciones</a></li>
             <li><a href="/Envios/envios.html" target="contenido" class="opcion">Envios</a></li>
             <li><a class="opcion">Power BI</a></li>
@@ -196,7 +35,8 @@ iframe {
     <button onclick="abrirModalItem()">Agregar Item</button>
     <button onclick="abrirModalDonante()">Agregar Donador</button>
     <button onclick="abrirModalPunto()">Agregar Punto de venta</button>
-    <button onclick="alert('Agregar donacion')">Agregar Donacion</button>
+    <button><a href="/AgregarDonacion/agregar.html" target="contenido" style="color: inherit;text-decoration: none;">Agregar Donacion</a></button>
+    <button><a href="/enviar/enviar.html" target="contenido" style="color: inherit;text-decoration: none;">Agregar Envio</a></button>
   </div>
 </div>
 <!-- MODAL PARA AGREGAR ITEM -->

@@ -37,13 +37,13 @@ thead {
   color: white;
 }
 .titulo{
-  font-size: 5vh;
+  font-size:  clamp(1.5rem, 4vw, 2.5rem);
 }
 th, td {
   padding: 12px 15px;
   text-align: left;
   border-bottom: 1px solid #eee;
-  font-size: 2vh;
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
 }
 
 tr:hover {
@@ -81,7 +81,7 @@ td button:hover {
   display: block;
   margin: 0 auto;
   background-color: #E82C59;
-    font-size: 2vh;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
 
 }
 

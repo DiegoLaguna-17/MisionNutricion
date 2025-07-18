@@ -107,9 +107,9 @@ th, td {
 #modalExito {
   display: none;
   position: fixed;
-  top: 20%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   background-color: var(--rosa-claro);
   border: 2px solid var(--verde-hoja);
   padding: 40px 30px;
@@ -120,15 +120,4 @@ th, td {
   font-family: 'Segoe UI', sans-serif;
   max-width: 90%;
   width: 400px;
-}
-
-#modalExito > div:first-child {
-  font-size: 4rem;
-  color: var(--verde-tallo);
-}
-
-#modalExito > div:nth-child(2) {
-  margin-top: 20px;
-  font-size: 1.5rem;
-  font-weight: bold;
 }

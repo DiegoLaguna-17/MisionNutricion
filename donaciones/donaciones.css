@@ -64,7 +64,7 @@ th, td {
   text-align: left;
   border-bottom: 1px solid #ddd;
   font-size: 0.95rem;
-    font-size: 3vh;
+    font-size: 2vh;
 
 }
 
@@ -72,7 +72,7 @@ tr:hover {
   background-color: var(--rosa-claro);
 }
 .titulo{
-  font-size: 7vh;
+  font-size: 5vh;
 }
 /* === BOTONES EN TABLA === */
 td button {
@@ -100,7 +100,7 @@ td button:hover {
   margin: 0 auto;
   border-radius: 8px;
   background-color: #E82C59;
-  font-size: 3vh;
+  font-size: 2vh;
 }
 
 /* === POPUP === */
@@ -117,7 +117,7 @@ td button:hover {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   z-index: 1000;
   width: 90%;
-  max-width: 500px;
+  max-width: 700px;
 }
 
 #overlay {

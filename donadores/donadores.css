@@ -61,7 +61,7 @@ th, td {
   padding: 12px 15px;
   text-align: left;
   border-bottom: 1px solid #eee;
-    font-size: 3vh;
+    font-size: 2vh;
 
 }
 
@@ -69,13 +69,13 @@ tr:hover {
   background-color: var(--rosa-fondo);
 }
 .titulo{
-  font-size: 7vh;
+  font-size: 5vh;
 }
 /* ===== VISTA COMPLETA DE DOCUMENTO ===== */
 .ver {
   width: 100%;
   height: 110%;
-    font-size: 3vh;
+    font-size: 2vh;
 
 }
 

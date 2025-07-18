@@ -21,7 +21,7 @@ body {
   margin: 0;
   background-color: var(--gris-fondo);
   color: #333;
-    overflow-y: scroll; /* Solo el body tendrá scroll */
+    overflow-x: hidden; /* Solo el body tendrá scroll */
 
 }
 

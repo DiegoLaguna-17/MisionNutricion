@@ -31,12 +31,13 @@ function mostrarItems(lista) {
 
     const celdaId = document.createElement('td');
     celdaId.textContent = item.id_alimento;
-
     const celdaDescripcion = document.createElement('td');
+
     celdaDescripcion.textContent = item.descripcion;
 
     const totalStock = item.donacion_item?.reduce((sum, it) => sum + (it.stock || 0), 0) || 0;
     const celdaStock = document.createElement('td');
+
     celdaStock.textContent = totalStock;
 
     fila.appendChild(celdaId);

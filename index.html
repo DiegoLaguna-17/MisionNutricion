@@ -27,14 +27,7 @@
     <!-- BOTÓN FLOTANTE CON MENÚ -->
 
     <iframe src="/items/items.html" name="contenido" id="iframeContenido"></iframe>
-    <script>
-  window.addEventListener("message", function(event) {
-    if (event.data.tipo === "ajustarAltura") {
-      const iframe = document.getElementById("miIframe");
-      iframe.style.height = event.data.altura + "px";
-    }
-  });
-</script>
+    
     <div class="fab-container">
   
   <button class="fab-main" id="fabMain" onclick="toggleFabMenu()">+</button>

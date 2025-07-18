@@ -45,11 +45,11 @@ th, td {
   text-align: left;
   border-bottom: 1px solid #ddd;
   font-size: 0.95rem;
-    font-size: 3vh;
+    font-size: 2vh;
 
 }
 .titulo{
-  font-size: 7vh;
+  font-size: 5vh;
 }
 tr:hover {
   background-color: #fdf2f2;

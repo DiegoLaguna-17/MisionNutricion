@@ -50,7 +50,7 @@ table {
 }
 
 .ubis{
-      width: 20vh;
+      width: 80%;
 }
 thead {
   background: linear-gradient(to right, var(--rojo-oscuro), var(--rojo-medio), var(--rojo-naranja));

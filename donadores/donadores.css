@@ -112,7 +112,7 @@ td button {
   padding: 8px 14px;
   margin: 2px;
   border-radius: 6px;
-  font-size: 0.9rem;
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }

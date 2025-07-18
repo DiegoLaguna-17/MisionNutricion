@@ -29,7 +29,7 @@ input[type="text"] {
   width: 60%;
   border: 1px solid #ccc;
   border-radius: 6px;
-  font-size: 1rem;
+  font-size:clamp(0.9rem, 1.5vw, 1.2rem);
   transition: border-color 0.3s ease;
 }
 

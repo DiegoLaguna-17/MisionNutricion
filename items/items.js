@@ -19,6 +19,7 @@ async function cargarItems() {
   }
 
   itemsCargados = data;
+  itemsCargados.sort((a, b) => a.id_alimento - b.id_alimento);
   mostrarItems(itemsCargados);
 }
 

@@ -11,6 +11,7 @@ async function cargarFundaciones() {
     console.log("Resultado:", data);
   }
   fundacionesCargadas =data;
+  fundacionesCargadas.sort((a, b) => a.id_fundacion - b.id_fundacion);
   mostrarFundaciones(fundacionesCargadas)
 }
 

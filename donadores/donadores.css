@@ -92,7 +92,12 @@ tr:hover {
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   z-index: 1000;
+
+  /* Agregado para scroll */
+  max-height: 80vh; /* Limita el alto */
+  overflow-y: auto; /* Agrega scroll si se necesita */
 }
+
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {

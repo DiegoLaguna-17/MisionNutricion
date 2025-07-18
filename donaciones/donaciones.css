@@ -112,13 +112,16 @@ td button:hover {
   transform: translateX(-50%);
   background: white;
   padding: 20px;
+  border: 2px solid var(--rojo-medio);
   border-radius: 10px;
-  border: 1px solid #ccc;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   z-index: 1000;
-  width: 90%;
-  max-width: 700px;
+
+  /* Agregado para scroll */
+  max-height: 80vh; /* Limita el alto */
+  overflow-y: auto; /* Agrega scroll si se necesita */
 }
+
 
 #overlay {
   display: none;

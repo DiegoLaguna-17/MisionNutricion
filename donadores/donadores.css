@@ -48,8 +48,9 @@ table {
   border-radius: 8px;
   overflow: hidden;
 }
+
 .ubis{
-      width: 70vh;
+      width: 40vh;
 }
 thead {
   background: linear-gradient(to right, var(--rojo-oscuro), var(--rojo-medio), var(--rojo-naranja));
@@ -96,6 +97,7 @@ tr:hover {
   /* Agregado para scroll */
   max-height: 80vh; /* Limita el alto */
   overflow-y: auto; /* Agrega scroll si se necesita */
+  max-width: 50vh;
 }
 
 

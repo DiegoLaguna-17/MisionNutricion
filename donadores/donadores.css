@@ -40,7 +40,7 @@ input[type="text"]:focus {
 
 /* ===== TABLA ===== */
 table {
-  width: 90%;
+  width: 50%;
   margin: 0 auto;
   border-collapse: collapse;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);

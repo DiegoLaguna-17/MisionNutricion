@@ -105,7 +105,7 @@ async function realizarEnvio(){
       if (error) {
         console.error('❌ Error al registrar envio:', error);
       } else {
-        mostrarModalExito();
+        alert('✅ Envío registrado exitosamente')
         console.log('✅ Envio registrada con éxito:', data);
         document.getElementById('tabla-body').innerHTML = '';
         idsAlimentos = [];

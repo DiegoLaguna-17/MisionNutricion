@@ -267,7 +267,8 @@ Voluntario responsable: ${voluntario}
 
   navigator.clipboard.writeText(mensaje)
     .then(() => {
-      mostrarModalExito();
+            alert('✅ Donación registrada exitosamente\n reporte copiado en el portapapeles')
+
     })
     .catch(err => {
       console.error('❌ Error al copiar al portapapeles:', err);
@@ -290,7 +291,6 @@ function copiarMensaje() {
   navigator.clipboard.writeText(mensaje)
   
     .then(() => {
-      mostrarModalExito();
     })
     .catch(err => {
       console.error('❌ Error al copiar al portapapeles:', err);

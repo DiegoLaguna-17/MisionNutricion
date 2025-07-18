@@ -1,13 +1,23 @@
+:root {
+  --rojo-oscuro: #E82C59;
+  --rojo-medio: #EF3B4B;
+  --rojo-naranja: #F15C3B;
+  --verde-hoja: #5EC457;
+  --verde-tallo: #008C47;
+  --rosa-claro: #FFCADF;
+  --gris-fondo: #f4f6f8;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f6f8;
+  background-color: var(--gris-fondo);
   margin: 0;
   padding: 2rem;
   color: #333;
 }
 
 h2, h3 {
-  color: #2c3e50;
+  color: var(--rojo-oscuro);
   margin-bottom: 10px;
 }
 
@@ -31,7 +41,7 @@ select {
 }
 
 button {
-  background-color: #2ecc71;
+  background-color: var(--verde-hoja);
   color: white;
   border: none;
   padding: 10px 16px;
@@ -43,7 +53,7 @@ button {
 }
 
 button:hover {
-  background-color: #27ae60;
+  background-color: var(--verde-tallo);
 }
 
 .section {
@@ -75,15 +85,16 @@ table {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 }
 
+th {
+  background: linear-gradient(to right, var(--rojo-oscuro), var(--rojo-medio), var(--rojo-naranja));
+  color: white;
+  font-weight: 600;
+}
+
 th, td {
   padding: 12px 15px;
   text-align: left;
   border-bottom: 1px solid #e0e0e0;
-}
-
-th {
-  background-color: #f0f0f0;
-  font-weight: 600;
 }
 
 @media (max-width: 600px) {
@@ -98,21 +109,21 @@ th {
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #e6ffed;
-  border: 2px solid #8ee4af;
+  background-color: var(--rosa-claro);
+  border: 2px solid var(--verde-hoja);
   padding: 40px 30px;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   z-index: 9999;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   max-width: 90%;
   width: 400px;
 }
 
 #modalExito > div:first-child {
   font-size: 4rem;
-  color: green;
+  color: var(--verde-tallo);
 }
 
 #modalExito > div:nth-child(2) {

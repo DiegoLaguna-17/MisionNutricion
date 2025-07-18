@@ -64,12 +64,16 @@ th, td {
   text-align: left;
   border-bottom: 1px solid #ddd;
   font-size: 0.95rem;
+    font-size: 3vh;
+
 }
 
 tr:hover {
   background-color: var(--rosa-claro);
 }
-
+.titulo{
+  font-size: 7vh;
+}
 /* === BOTONES EN TABLA === */
 td button {
   background-color: var(--verde-tallo);
@@ -96,6 +100,7 @@ td button:hover {
   margin: 0 auto;
   border-radius: 8px;
   background-color: #E82C59;
+  font-size: 3vh;
 }
 
 /* === POPUP === */
